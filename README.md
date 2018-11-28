@@ -19,7 +19,7 @@ allprojects {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-      implementation 'com.github.pdog18:current-application-util:1.0'
+      implementation 'com.github.pdog18:dimension-extensions:1.0'
 }
 ```
 Step 3. Use in Kotlin's code(or other file)
