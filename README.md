@@ -1,3 +1,37 @@
+# dp px 转换工具类 by Kotlin
+
+
+
+使用方法
+
+Step 1. Add the JitPack repository to your build file
+
+Add it in your root build.gradle at the end of repositories:
+
+```groovy
+allprojects {
+    repositories {
+        //...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+Step 2. Add the dependency
+```groovy
+dependencies {
+      implementation 'com.github.pdog18:current-application-util:1.0'
+}
+```
+Step 3. Use in Kotlin's code(or other file)
+```
+val height = 48f.dp
+```
+
+
+
+
+
+
 在`android`开发中有的时候处理控件大小我们会需要用到`dp`值来进行处理，针对这种情况，我们一般会写一个类似`dp2px(float dp)`的`static`方法。
 
 然后每次调用的时候这样来使用
