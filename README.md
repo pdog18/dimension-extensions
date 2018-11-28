@@ -2,8 +2,6 @@
 
 
 
-使用方法
-
 Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
@@ -30,6 +28,8 @@ val height = 48f.dp
 
 
 
+
+## 说明
 
 
 在`android`开发中有的时候处理控件大小我们会需要用到`dp`值来进行处理，针对这种情况，我们一般会写一个类似`dp2px(float dp)`的`static`方法。
