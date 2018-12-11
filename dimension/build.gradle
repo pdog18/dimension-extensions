@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.9'    // 0.9, 不是0.9.0
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+
+publish {
+    userOrg = 'pdog18'    //bintray.com用户名
+    groupId = 'com.pdog.util'    //jcenter上的路径
+    artifactId = 'dimension-extensions'    //自己的maven上添加的包名
+    publishVersion = '0.9.0'    //版本号
+    desc = 'dimension-extensions'    //描述
+    website = 'https://github.com/pdog18/dimension-extensions'
+}
