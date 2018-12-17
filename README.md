@@ -2,25 +2,13 @@
 
 
 
-Step 1. Add the JitPack repository to your build file
-
-Add it in your root build.gradle at the end of repositories:
-
-```groovy
-allprojects {
-    repositories {
-        //...
-        maven { url 'https://jitpack.io' }
-    }
-}
-```
-Step 2. Add the dependency
+Step 1. Add the dependency
 ```groovy
 dependencies {
-      implementation 'com.github.pdog18:dimension-extensions:1.0'
+       api 'com.pdog.util:dimension-extensions:0.9.0'
 }
 ```
-Step 3. Use in Kotlin's code(or other file)
+Step 2. Use in Kotlin's code(or other file)
 ```
 val height = 48f.dp
 ```
